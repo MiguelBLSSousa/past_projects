@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1636463017 source:c:\users\matth\documents\module 2\programing\c\assembler\main.cpp
+	<iostream>
+	<fstream>
+	<bits/stdc++.h>
+	<bitset>
+	<string>
+	<sstream>
+	<list>
+
