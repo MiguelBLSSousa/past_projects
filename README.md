@@ -1,4 +1,4 @@
-Project Descriptions
+PROJECT DESCRIPTIONS
 
 digital_hardware_project (2021):
 
