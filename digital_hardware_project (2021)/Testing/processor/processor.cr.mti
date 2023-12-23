@@ -1,0 +1,74 @@
+C:/Users/User/Downloads/processor/Testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/Testbench.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+-- Loading package NUMERIC_STD
+-- Loading entity Processor
+
+} {} {}} C:/Users/User/Downloads/processor/Processor.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/Processor.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Processor
+-- Compiling architecture structure of Processor
+
+} {} {}} C:/Users/User/Downloads/processor/Control.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/Control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Control
+-- Compiling architecture structure of Control
+
+} {} {}} C:/Users/User/Downloads/processor/RegisterFile.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/RegisterFile.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RegisterFile
+-- Compiling architecture bhv of RegisterFile
+
+} {} {}} C:/Users/User/Downloads/processor/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/ALU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture bhv of ALU
+
+} {} {}} C:/Users/User/Downloads/processor/MainMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/MainMemory.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mainMemory
+-- Compiling architecture bhv of mainMemory
+
+} {} {}} C:/Users/User/Downloads/processor/Microstore.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/Microstore.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity microstore
+-- Compiling architecture behaviour of microstore
+
+} {} {}} C:/Users/User/Downloads/processor/Datapath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/processor/Datapath.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dataPath
+-- Compiling architecture structure of dataPath
+
+} {} {}}
