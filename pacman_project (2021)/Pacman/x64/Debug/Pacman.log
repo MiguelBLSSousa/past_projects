@@ -1,0 +1,7 @@
+﻿  Fruits.cpp
+  main.cpp
+C:\Users\steve\OneDrive\Desktop\Module 7-electrical engineering\Programming 2\Pacman_real2\Pacman\Pacman\src\main.cpp(224,36): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\steve\OneDrive\Desktop\Module 7-electrical engineering\Programming 2\Pacman_real2\Pacman\Pacman\src\main.cpp(225,36): warning C4553: '==': result of expression not used; did you intend '='?
+  Generating Code...
+C:\Users\steve\OneDrive\Desktop\Module 7-electrical engineering\Programming 2\Pacman_real2\Pacman\Pacman\src\Fruits.cpp(38): warning C4715: 'Fruits::getFruitType': not all control paths return a value
+  Pacman.vcxproj -> C:\Users\steve\OneDrive\Desktop\Module 7-electrical engineering\Programming 2\Pacman_real2\Pacman\x64\Debug\Pacman.exe
