@@ -1,0 +1,55 @@
+{C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/debug_portmap.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/debug_portmap.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity debug_portmap
+-- Compiling architecture structure of debug_portmap
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/RegisterFile.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/RegisterFile.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RegisterFile
+-- Compiling architecture bhv of RegisterFile
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/MainMemory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/MainMemory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mainMemory
+-- Compiling architecture bhv of mainMemory
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/ALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture bhv of ALU
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Microstore.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Microstore.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity microstore
+-- Compiling architecture behaviour of microstore
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Debug.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Debug.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Debug
+-- Compiling architecture bhv of Debug
+
+} {} {}}

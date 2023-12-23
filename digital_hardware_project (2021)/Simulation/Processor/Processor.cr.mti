@@ -1,0 +1,91 @@
+{C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture bhv of ALU
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MainMemory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MainMemory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mainMemory
+-- Compiling architecture bhv of mainMemory
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MicrostoreBhv.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MicrostoreBhv.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling architecture behaviour of microstore
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading entity microstore
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ClockDiv.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ClockDiv.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clockdiv
+-- Compiling architecture bhv of clockdiv
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Datapath.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Datapath.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dataPath
+-- Compiling architecture structure of dataPath
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Microstore.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Microstore.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity microstore
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Testbench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Testbench.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+-- Loading package NUMERIC_STD
+-- Loading entity Processor
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Processor.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Processor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Processor
+-- Compiling architecture structure of Processor
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Control.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Control
+-- Compiling architecture structure of Control
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/RegisterFile.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Simulation/Processor/RegisterFile.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RegisterFile
+-- Compiling architecture bhv of RegisterFile
+
+} {} {}}

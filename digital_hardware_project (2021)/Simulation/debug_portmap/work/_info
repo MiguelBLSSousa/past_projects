@@ -1,0 +1,256 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/matth/Documents/module 5/Project/Simulation/Processor
+Ealu
+Z0 w1636491704
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap
+Z5 8C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/ALU.vhd
+Z6 FC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/ALU.vhd
+l0
+L21
+VAI<:L?`o<_X5U>JILWXna2
+!s100 T>i<7PaLXnaHd]JoUR5=>0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1636543192
+!i10b 1
+Z9 !s108 1636543192.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/ALU.vhd|
+Z11 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 AI<:L?`o<_X5U>JILWXna2
+l40
+L33
+V=8f7;e_R8ag]0f7f7NMo?3
+!s100 1kKLY]b`JBJ?0Wk:M^6h^1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edebug
+Z14 w1636493156
+R1
+R2
+R3
+R4
+Z15 8C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Debug.vhd
+Z16 FC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Debug.vhd
+l0
+L6
+VcB8O;0NRzFSLhn3ZMdWQW1
+!s100 El;R]RC;b5PS@F5L`]jf>1
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Debug.vhd|
+Z18 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Debug.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 5 debug 0 22 cB8O;0NRzFSLhn3ZMdWQW1
+l29
+L28
+V@4Qa8>SHE`HMzh5i=5iaP0
+!s100 C]cfiPDHh6?3>86]]<LN[2
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Edebug_portmap
+Z19 w1636492190
+R1
+R2
+R3
+R4
+Z20 8C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/debug_portmap.vhd
+Z21 FC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/debug_portmap.vhd
+l0
+L6
+VAC_QEoYiP<hbz5mbmm:Tj3
+!s100 [JFTaPHTJX8@H1^Tlmm831
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/debug_portmap.vhd|
+Z23 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/debug_portmap.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 13 debug_portmap 0 22 AC_QEoYiP<hbz5mbmm:Tj3
+l122
+L22
+VS7I3;RQzfdoe[i57Ez:VZ1
+!s100 TiBEl?]N==HPzV[US32GZ3
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Emainmemory
+Z24 w1636470222
+R1
+R2
+R3
+R4
+Z25 8C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/MainMemory.vhd
+Z26 FC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/MainMemory.vhd
+l0
+L13
+VJ=n0C115L[=j33_PMcM>z2
+!s100 LS[RnAHhoIIGGB2YLB<KG1
+R7
+32
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/MainMemory.vhd|
+Z28 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/MainMemory.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 10 mainmemory 0 22 J=n0C115L[=j33_PMcM>z2
+l33
+L31
+Vej8HXz`h>lfm`l<PMGA3h2
+!s100 <Ih6b6MTUSZH8IUQS<Ck11
+R7
+32
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Emicrostore
+Z29 w1636471270
+R1
+R2
+R3
+R4
+Z30 8C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Microstore.vhd
+Z31 FC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Microstore.vhd
+l0
+L4
+VmgVoSCnIDg89_^RLIY3eQ3
+!s100 XPHzef_<Q:2MS@aVMH?on1
+R7
+32
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Microstore.vhd|
+Z33 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/Microstore.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+Z34 DEx4 work 10 microstore 0 22 mgVoSCnIDg89_^RLIY3eQ3
+l527
+L12
+Z35 VH=]AEJO2FAM1T2n6F28Dj1
+Z36 !s100 jnF5SG3CngMYhESa6zLFj0
+R7
+32
+R8
+!i10b 1
+R9
+R32
+R33
+!i113 1
+R12
+R13
+Eregisterfile
+Z37 w1636467448
+R1
+R2
+R3
+R4
+Z38 8C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/RegisterFile.vhd
+Z39 FC:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/RegisterFile.vhd
+l0
+L15
+VW:ShnA^SCB19gZ82:i`m81
+!s100 PziY9ZHRe@:;oJ9S1Bdjl0
+R7
+32
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/RegisterFile.vhd|
+Z41 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/debug_portmap/RegisterFile.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 12 registerfile 0 22 W:ShnA^SCB19gZ82:i`m81
+l37
+L33
+V_RZ9:6Za69T?[>k`H@8]d3
+!s100 3I9DCBJ^gm>6PjI[^``063
+R7
+32
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13

@@ -1,0 +1,382 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/matth/Documents/module 5/Project/Testing/processor
+Ealu
+Z0 w1636500802
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/matth/Documents/module 5/Project/Simulation/Processor
+Z5 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ALU.vhd
+Z6 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/ALU.vhd
+l0
+L21
+VAI<:L?`o<_X5U>JILWXna2
+!s100 T>i<7PaLXnaHd]JoUR5=>0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1636541890
+!i10b 1
+Z9 !s108 1636541890.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ALU.vhd|
+Z11 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 AI<:L?`o<_X5U>JILWXna2
+l40
+L33
+V8f:M^fd_n0I5]:<hX8`=B2
+!s100 lH4QI7^F<TA:QK;hSocJX1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eclockdiv
+Z14 w1636453406
+R1
+R2
+R3
+R4
+Z15 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ClockDiv.vhd
+Z16 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/ClockDiv.vhd
+l0
+L5
+V<22D<=bJ<imZO9E7dW_[H1
+!s100 WTPjGDnV^F=:JcRAR3AUb0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ClockDiv.vhd|
+Z18 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/ClockDiv.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 8 clockdiv 0 22 <22D<=bJ<imZO9E7dW_[H1
+l15
+L10
+VA_cQDB_Wf;U_2TLGbaVH71
+!s100 7K^N6@T_hk[ofgeH><XW_0
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Econtrol
+Z19 w1636500752
+R1
+R2
+R3
+R4
+Z20 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Control.vhd
+Z21 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/Control.vhd
+l0
+L4
+V;7Wa3bW4KUf?_IO`23l@k0
+!s100 Pc4;`Jg1nJ<o9=<DkNnMP1
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Control.vhd|
+Z23 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Control.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 7 control 0 22 ;7Wa3bW4KUf?_IO`23l@k0
+l33
+L22
+V@og@2;aTKlTYY@UbgR;He3
+!s100 `zK2HKQ6dKGEGgO0WVja53
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Edatapath
+Z24 w1636472504
+R1
+R2
+R3
+R4
+Z25 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Datapath.vhd
+Z26 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/Datapath.vhd
+l0
+L13
+V[E46kzoOQfc9SZ0JD>XXR1
+!s100 i3k`3zhhjz9[5;``lG7`@1
+R7
+32
+Z27 !s110 1636541891
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Datapath.vhd|
+Z29 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Datapath.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 8 datapath 0 22 [E46kzoOQfc9SZ0JD>XXR1
+l63
+L30
+V;f_ZK5MJaH7:YfRH0z0m^1
+!s100 QLG?dRA1MXVaJRan0;cfM3
+R7
+32
+R27
+!i10b 1
+R9
+R28
+R29
+!i113 1
+R12
+R13
+Emainmemory
+Z30 w1636500998
+R1
+R2
+R3
+R4
+Z31 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MainMemory.vhd
+Z32 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/MainMemory.vhd
+l0
+L13
+VXZ4jFK[9=HBMbD_BcPQ1G3
+!s100 WHd;cD44XYOSQjXdied^O1
+R7
+32
+R27
+!i10b 1
+Z33 !s108 1636541891.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MainMemory.vhd|
+Z35 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MainMemory.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 10 mainmemory 0 22 XZ4jFK[9=HBMbD_BcPQ1G3
+l30
+L28
+Vl`675]A2V=Uz7[OS0z`HD0
+!s100 i[fTf3]mKClEeDcb_;zzf3
+R7
+32
+R27
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R12
+R13
+Emicrostore
+w1636499652
+R1
+R2
+R3
+R4
+8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Microstore.vhd
+FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/Microstore.vhd
+l0
+L4
+Vd_>J]k:Y;GUI6jJD><gl=3
+!s100 ]:2SmVcaoCka@R26<maTS2
+R7
+32
+R27
+!i10b 1
+R33
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Microstore.vhd|
+!s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Microstore.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+w1636541867
+R1
+R2
+R3
+DEx4 work 10 microstore 0 22 d_>J]k:Y;GUI6jJD><gl=3
+8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MicrostoreBhv.vhd
+FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/MicrostoreBhv.vhd
+l516
+L1
+VEKioV_gO:8mW6QO_POgWQ3
+!s100 R<RO8WEXgnbJJQVozNioC0
+R7
+32
+R27
+!i10b 1
+R33
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MicrostoreBhv.vhd|
+!s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/MicrostoreBhv.vhd|
+!i113 1
+R12
+R13
+Eprocessor
+Z36 w1636472674
+R1
+R2
+R3
+R4
+Z37 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Processor.vhd
+Z38 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/Processor.vhd
+l0
+L5
+VW1Jbe;OCBoS40?MoTXKLW2
+!s100 0OHOMa5_hz9PL;ag<UETG2
+R7
+32
+R27
+!i10b 1
+R33
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Processor.vhd|
+Z40 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Processor.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+Z41 DEx4 work 9 processor 0 22 W1Jbe;OCBoS40?MoTXKLW2
+l77
+L14
+VENPO<OZchGK=BEC=U?2Il0
+!s100 A0JE]mI=5fBbdPmhGl9?c0
+R7
+32
+R27
+!i10b 1
+R33
+R39
+R40
+!i113 1
+R12
+R13
+Eregisterfile
+Z42 w1636500892
+R1
+R2
+R3
+R4
+Z43 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/RegisterFile.vhd
+Z44 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/RegisterFile.vhd
+l0
+L15
+VfNWV^0Ha2[dm<]DXAXz2m0
+!s100 8[C;3h1WKJzJZ7zmzn:l31
+R7
+32
+R27
+!i10b 1
+R33
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/RegisterFile.vhd|
+Z46 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/RegisterFile.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+Z47 DEx4 work 12 registerfile 0 22 fNWV^0Ha2[dm<]DXAXz2m0
+l35
+L31
+Z48 VFD<@Aj>FahDiQT2_oPU7d1
+Z49 !s100 HUd3Dc?GI?>eOc8eSm@@<0
+R7
+32
+R27
+!i10b 1
+R33
+R45
+R46
+!i113 1
+R12
+R13
+Etestbench
+Z50 w1636494428
+R2
+R3
+R4
+Z51 8C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Testbench.vhd
+Z52 FC:/Users/matth/Documents/module 5/Project/Simulation/Processor/Testbench.vhd
+l0
+L5
+V^LkQbPIYOPO1:MbTC6Yo70
+!s100 7Ki:lNN[2HkM4Dje?VJG?2
+R7
+32
+R8
+!i10b 1
+R9
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Testbench.vhd|
+Z54 !s107 C:/Users/matth/Documents/module 5/Project/Simulation/Processor/Testbench.vhd|
+!i113 1
+R12
+R13
+Atest
+R1
+R41
+R2
+R3
+DEx4 work 9 testbench 0 22 ^LkQbPIYOPO1:MbTC6Yo70
+l18
+L8
+Vn^jUm[4L;meLY?c[0c5`G3
+!s100 inG]NN1b8^_0iZ5g47@nG1
+R7
+32
+R8
+!i10b 1
+R9
+R53
+R54
+!i113 1
+R12
+R13
