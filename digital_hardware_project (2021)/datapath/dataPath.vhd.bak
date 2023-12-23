@@ -1,0 +1,126 @@
+-- Project          : VHDL Hybrid accumulator-2operand machine
+--                    Digital Hardware by group 
+-- 
+-- File             : dataPath.vhd
+--
+-- Related File(s)  : controlUnit, registerFile, ALU, instructionMemory
+
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+ENTITY dataPath IS
+  PORT (
+    	Clk : IN std_logic;
+	Reset : IN std_logic; -- low active
+	Branch_Conditions : OUT std_logic_vector(3 DOWNTO 0); -- branch conditions bits from ALU
+	M_Rd : IN std_logic; -- Memory Read
+	M_Wr : IN std_logic; -- Memory Write
+	R_mv : IN std_logic; -- Register Move
+	operation_value : IN std_logic_vector(3 DOWNTO 0); --
+	sel_A : IN std_logic_vector(5 DOWNTO 0); -- !!! was 15 downto 0, but i think it should be
+	sel_B : IN std_logic_vector(5 DOWNTO 0); -- !!! ^^^
+	sel_D : IN std_logic_vector(1 DOWNTO 0)--bits to select rd/wr main memory registers
+	
+  );
+END ENTITY dataPath;
+
+ARCHITECTURE structure OF dataPath IS
+
+  COMPONENT registerFile IS
+    PORT (
+	Clk     : IN std_logic;
+	Reset : IN std_logic; -- low active
+	sel_A : IN std_logic_vector(5 DOWNTO 0); --register adress for bus A
+	sel_B : IN std_logic_vector(5 DOWNTO 0); --register adress for bus B
+	sel_D : IN std_logic_vector(1 DOWNTO 0);--bits to select rd/wr main memory registers
+	Bus_A : OUT std_logic_vector(15 DOWNTO 0); --Bus A going into ALU
+	Bus_B : OUT std_logic_vector(15 DOWNTO 0); --Bus B going into ALU
+	Bus_C : IN std_logic_vector(15 DOWNTO 0); --Bus C from ALU result
+	Bus_D : IN std_logic_vector(15 DOWNTO 0); --Bus D from memory
+	M_Rd : IN std_logic; -- Memory Read
+	M_Wr : IN std_logic; -- Memory Write
+	R_mv : IN std_logic -- Register Move
+	
+    );
+  END COMPONENT registerFile;
+
+  COMPONENT ALU IS
+    PORT (
+	Clk     : IN std_logic;
+	Reset : IN std_logic; -- low active
+	Bus_A : IN std_logic_vector(15 DOWNTO 0); --Bus A from registerFile
+	Bus_B : IN std_logic_vector(15 DOWNTO 0); --Bus B from registerFile
+	operation_value : IN std_logic_vector(3 DOWNTO 0); -- op code for ALU
+	Bus_C : OUT std_logic_vector(15 DOWNTO 0); --Bus C to registerFile
+	Branch_Conditions : IN std_logic_vector(3 DOWNTO 0) -- branch conditions bits from ALU
+
+    );
+  END COMPONENT ALU;
+
+  COMPONENT mainMemory IS
+    PORT (
+	Clk     : IN std_logic;
+	Reset : IN std_logic; -- low active
+	Bus_A : IN std_logic_vector(15 DOWNTO 0); --Bus A first 12 bits is memory adress
+	Bus_B : IN std_logic_vector(15 DOWNTO 0); --Bus B data going into mainMemory
+	Bus_D : OUT std_logic_vector(15 DOWNTO 0); --Bus D from memory
+	M_Rd : IN std_logic; -- Memory Read
+	M_Wr : IN std_logic; -- Memory Write
+	sel_D : IN std_logic_vector(1 DOWNTO 0)--bits to select rd/wr main memory registers
+	
+    );
+  END COMPONENT mainMemory;
+
+
+  SIGNAL Bus_A, Bus_B, Bus_C, Bus_D, Bus_E : std_logic_vector(15 DOWNTO 0);
+ 
+ 
+BEGIN
+  
+   rF: registerFile 
+    PORT MAP(
+	Clk => Clk,
+	Reset => Reset, -- low active
+	sel_A => sel_A, --register adress for bus A
+	sel_B => sel_B, --register adress for bus B
+	sel_D => sel_D, --bits to select rd/wr main memory registers !!!was missing before
+	Bus_A => Bus_A, --Bus A going into ALU
+	Bus_B => Bus_B, --Bus B going into ALU
+	Bus_C => Bus_C, --Bus C from ALU result
+	Bus_D => Bus_D, --Bus D from memory
+	M_Rd => M_Rd, -- Memory Read
+	M_Wr => M_Wr, -- Memory Write
+	R_mv => R_mv -- Register Move
+	
+    );
+
+  AL : ALU
+    PORT MAP(
+	Clk => Clk,
+	Reset => Reset, -- low active
+	Bus_A => Bus_A, --Bus A from registerFile
+	Bus_B => Bus_B, --Bus B from registerFile
+	operation_value => operation_Value, 
+	Bus_C => Bus_C, --Bus C to registerFile
+	Branch_Conditions => Branch_Conditions -- branch conditions bits from ALU
+
+    );
+  
+  mM : mainMemory
+    PORT MAP(
+	Clk => Clk,
+	Reset => Reset, -- low active
+	Bus_A => Bus_A, --Bus A going into ALU
+	Bus_B => Bus_B, --Bus B going into ALU
+	Bus_D => Bus_D, --Bus D from memory
+	M_Rd => M_Rd, -- Memory Read
+	M_Wr => M_Wr, -- Memory Write
+	sel_D => sel_D--bits to select rd/wr main memory registers
+	
+    );
+
+
+END ARCHITECTURE structure;
+

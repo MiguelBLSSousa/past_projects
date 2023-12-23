@@ -1,0 +1,36 @@
+-- Project          : VHDL Hybrid accumulator-2operand machine
+--                    Digital Hardware by group 
+-- 
+-- File             : ALU.vhd
+--
+-- Related File(s)  : 
+
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+ENTITY ALU IS
+    PORT (
+	Clk     : IN std_logic;
+	Reset : IN std_logic; -- low active
+	Bus_A : IN std_logic_vector(15 DOWNTO 0); --Bus A from registerFile
+	Bus_B : IN std_logic_vector(15 DOWNTO 0); --Bus B from registerFile
+	operation_value : IN std_logic_vector(4 DOWNTO 0); -- !!! shouldnt this be 3 downto 0?
+	Bus_C : OUT std_logic_vector(15 DOWNTO 0); --Bus C to registerFile
+	Branch_Conditions : IN std_logic_vector(7 DOWNTO 0) -- branch conditions bits from ALU
+
+      );
+END ENTITY ALU;
+
+ARCHITECTURE bhv OF ALU IS
+
+BEGIN
+
+PROCESS(clk, reset)
+
+BEGIN
+
+
+END PROCESS;
+END;

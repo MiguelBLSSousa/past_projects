@@ -1,0 +1,33 @@
+-- Project          : VHDL Hybrid accumulator-2operand machine
+--                    Digital Hardware by group 
+-- 
+-- File             : temp_.vhd
+--
+-- Related File(s)  : 
+
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+ENTITY temp_ IS
+    PORT (
+	Clk     : IN std_logic;
+	Reset : IN std_logic -- low active
+	--instruction_Address : IN std_logic_vector(4 DOWNTO 0);
+	--instruction_Register : OUT std_logic_vector(15 DOWNTO 0);
+	
+      );
+END ENTITY temp_;
+
+ARCHITECTURE bhv OF temp_ IS
+
+BEGIN
+
+PROCESS(clk, reset)
+
+BEGIN
+
+
+END PROCESS;
+END;

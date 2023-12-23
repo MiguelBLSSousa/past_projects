@@ -1,0 +1,74 @@
+GEN, 33			--startline
+MOVE, 63, 48
+BA, 48
+GEN, 26 --jumpBin
+MOVE, 63, 32 --jump1B
+Gen, 16
+MOVE, 63, 33 --jump2B
+MOVE, 0, 3 
+MOVE, 0, 4
+GEN, 1
+MOVE, 63, 10
+GEN, 15 
+MOVE, 63, 11
+MOVE, 1, 12 
+TCMP, 2
+MOVE, 63, 13 
+SFTR, 12, 11 --jump2B
+ADD, 63, 13 
+BSB, N, 32
+SFTL, 10, 11
+ADD, 3, 63
+MOVE, 63, 3 
+SFTL, 13, 11
+ADD, 12, 63
+MOVE, 63, 12 
+MOVE, 12, 4
+ADD, 11, 0 --jump1B
+BSB, Z, 34
+MOVE, 63, 11
+TCMP, 10
+ADD, 11, 63
+MOVE, 63, 11
+BA, 33
+GEN, 3 			--startline
+MOVE, 63, 49 	--Bin
+GEN, 70			--jump1C
+MOVE, 63, 35
+GEN, 53			--jump2C
+MOVE, 63, 36
+GEN, 73			--Cout
+MOVE, 63, 37
+GEN, 1 
+MOVE, 63, 14
+GEN, 2
+MOVE, 63, 15
+GEN, 3
+MOVE, 63, 16
+MOVE, 15, 17 
+ADD, 15, 15
+MOVE, 63, 18
+GEN, 2046
+TCMP, 63
+MOVE, 63, 19
+MOVE, 17, 1		--jump2C
+MOVE, 15, 2
+GEN, 58			--Bout
+MOVE, 63, 34	--set jumpBout
+BA, 49 			--jumpBin
+OR, r0, r4
+BSB, z, 35		--jump1C
+MOVE, 17, 1
+MOVE, 16, 2
+GEN, 65 		--Bout
+MOVE, 63, 34	--set jumpBout
+BA, 49 			--jumpBin
+OR, 0, 4
+BSB, Z, 35		--jump1C
+MOVE, 18, 20
+STORE, 17, 20
+ADD, 17, 14
+ADD, 18, 14		--jump1C
+BSB, N, 37
+BA, 36			--jump2C
+

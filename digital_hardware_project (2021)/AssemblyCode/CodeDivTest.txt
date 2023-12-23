@@ -1,0 +1,37 @@
+GEN, 42
+MOVE, 63, 1 --X
+GEN, 8
+MOVE, 63, 2 --Y
+GEN, 29
+MOVE, 63, 32 --jump1B
+Gen, 19
+MOVE, 63, 33 --jump2B
+Gen, 36
+MOVE, 63, 34 --Bout
+MOVE, 0, 3 
+MOVE, 0, 4
+GEN, 1
+MOVE, 63, 10
+GEN, 15 
+MOVE, 63, 11
+MOVE, 1, 12 
+TCMP, 2
+MOVE, 63, 13 
+SFTR, 12, 11 --jump2B
+ADD, 63, 13 
+BSB, N, 32
+SFTL, 10, 11
+ADD, 3, 63
+MOVE, 63, 3 
+SFTL, 13, 11
+ADD, 12, 63
+MOVE, 63, 12 
+MOVE, 12, 4
+ADD, 11, 0 --jump1B
+BSB, Z, 34
+MOVE, 63, 11
+TCMP, 10
+ADD, 11, 63
+MOVE, 63, 11
+BA, 33
+

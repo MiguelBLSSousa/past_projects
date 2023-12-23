@@ -1,0 +1,55 @@
+{C:/Users/matth/Documents/module 5/Project/datapath/dataPath.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\matth\Documents\module 5\Project\datapath\dataPath.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dataPath
+-- Compiling architecture structure of dataPath
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/datapath/processor.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\matth\Documents\module 5\Project\datapath\processor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity processor
+-- Compiling architecture structure of processor
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/datapath/controlUnit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\matth\Documents\module 5\Project\datapath\controlUnit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity controlUnit
+-- Compiling architecture bhv of controlUnit
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/datapath/registerFile.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\matth\Documents\module 5\Project\datapath\registerFile.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity registerFile
+-- Compiling architecture bhv of registerFile
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/datapath/mainMemory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\matth\Documents\module 5\Project\datapath\mainMemory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mainMemory
+-- Compiling architecture bhv of mainMemory
+
+} {} {}} {C:/Users/matth/Documents/module 5/Project/datapath/ALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\matth\Documents\module 5\Project\datapath\ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture bhv of ALU
+
+} {} {}}

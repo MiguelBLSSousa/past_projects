@@ -1,0 +1,148 @@
+GEN, 33			--Cin
+MOVE, 63, 48
+BA, 48
+GEN, 26 		||--jumpBin
+MOVE, 63, 32 	--jump1B
+Gen, 16
+MOVE, 63, 33 	--jump2B
+MOVE, 0, 3 
+MOVE, 0, 4
+GEN, 1
+MOVE, 63, 10
+GEN, 15 
+MOVE, 63, 11
+MOVE, 1, 12 
+TCMP, 2
+MOVE, 63, 13 
+SFTR, 12, 11 	||--jump2B
+ADD, 63, 13 
+BSB, N, 32
+SFTL, 10, 11
+ADD, 3, 63
+MOVE, 63, 3 
+SFTL, 13, 11
+ADD, 12, 63
+MOVE, 63, 12 
+MOVE, 12, 4
+ADD, 11, 0 		||--jump1B
+BSB, Z, 34
+MOVE, 63, 11
+TCMP, 10
+ADD, 11, 63
+MOVE, 63, 11
+BA, 33
+GEN, 3 			||--Cin
+MOVE, 63, 49 	--Bin
+GEN, 73			--jump1C
+MOVE, 63, 35
+GEN, 56			--jump2C
+MOVE, 63, 36
+GEN, 103			--Cout/Ein
+MOVE, 63, 37
+MOVE, 63, 51	--Ein
+MOVE, 51, 37
+GEN, 1 
+MOVE, 63, 14
+GEN, 2
+MOVE, 63, 15
+GEN, 3
+MOVE, 63, 16
+MOVE, 15, 17 
+ADD, 15, 15
+MOVE, 63, 18
+GEN, 2046
+TCMP, 63
+MOVE, 63, 19
+MOVE, 17, 1		||--jump2C
+MOVE, 15, 2
+GEN, 60			--Bout
+MOVE, 63, 34	--set jumpBout
+BA, 49 			--jumpBin
+OR, r0, r4		||-Bout
+BSB, z, 35		--jump1C
+MOVE, 17, 1
+MOVE, 16, 2
+GEN, 68 		--Bout
+MOVE, 63, 34	--set jumpBout
+BA, 49 			--jumpBin
+OR, 0, 4		||--Bout
+BSB, Z, 35		--jump1C
+MOVE, 18, 20
+STORE, 17, 20
+ADD, 17, 14
+ADD, 18, 14		||--jump1C
+BSB, N, 37
+BA, 36			--jump2C
+MOVE, 0, 21 	||--Din
+MOVE, 0, 22 
+MOVE, 0, 23 
+GEN, 95			--jump1D
+MOVE, 63, 38
+GEN, 89			--jump2D
+MOVE, 63, 39
+GEN, 1
+MOVE, 63, 24
+GEN, 2047 
+TCMP, 63
+MOVE, 63, 25
+MOVE, r0, 21
+MOVE, r0, 22
+LOAD, 22, 23 	||--jump2D
+OR, 0, 23
+BSB, Z, 38		--jump1D
+STORE, 21, 23
+ADD, 21, 24
+MOVE, 63, 21 
+ADD, 22, 24 	||--jump1D 
+MOVE, 63, 22 
+ADD, 22, 25
+BSB, N, 40
+BA,39 			--jump2D
+Gen, 75			--Ein
+MOVE, 63, 50	--Din
+Gen, 143
+MOVE, 63, 41	--jump1E
+Gen, 138
+MOVE, 63, 42	--jump2E
+Gen, 139
+MOVE, 63, 43	--jump3E
+Gen, 127
+MOVE, 63, 44	--jump4E
+Gen, 123
+MOVE, 63, 45	--jump5E
+Gen, 148
+MOVE, 63, 46	--Eout
+GEN, 1 			
+MOVE, 63, 26
+GEN, 1
+MOVE, 63, 27
+GEN, 500
+TCMP, r63
+MOVE, r63, 28
+LOAD, 27, 30
+ADD, 27, 26 	||--jump 5E
+MOVE, r63, 27 
+ADD, 27, 28
+BSB, Z, 46
+MOVE, 27, 29
+LOAD, 29, 31 	||--jump4E
+OR, 31, r0
+BSB, Z, 41		--jump1E 
+MOVE, 31, r1
+MOVE, 30, r2
+GEN, 135			--Bout
+MOVE, 63, 34	--set jumpBout
+BA, 49 			--jumpBin
+OR, r4, r0		||--Bout
+BSB, Z, 42		--jump2E
+BA , 43			--jump3E
+MOVE, r0, 31 	||--jump2E
+STORE, 29, 31 	||--jump3E
+ADD, 29, 26
+MOVE, r63, 29
+BA,44			--jump4E
+GEN, 146		--Dout ||jump1E
+MOVE, 63, 40	--set jumpDout
+BA, 50 			--jumpDin	
+BA, 45			--jump5E ||--Dout
+

@@ -1,0 +1,55 @@
+MOVE, r0, r3
+GEN, 1 
+MOVE, r63, tempA1
+GEN, 15
+MOVE, r63, tempA2
+MOVE, r0, tempA3
+SFTL, r2, tempA3 --jump2A
+SFTR, r2, tempA2
+MOVE r63 tempA4
+TCMP tempA1
+ADD tempA4 r63 //check if the tempA3th amount from the right is 1
+BSB Z --jump1A
+SFTL, r1, tempA2
+ADD, r3, r63
+MOVE r63 r3 //add shifted 1 to answer
+ADD tempA3 tempA1 --jump1A //add 1 to tempA3
+MOVE r63 tempA3
+TCMP tempA1
+ADD tempA2 r63 //subtract 1 from tempA2
+BSB, N, [out] --jump out
+MOVE r63, tempA2
+BA--jump2A
+
+-----------
+x * y = z
+x r1
+y r2
+z r3
+
+00001010
+00001011
+--------*
+0000|1010|
+000|1010|0
+00|0000|00
+0|1010|000
+--------+
+
+
+LOAD,	%M,	%r
+STORE,	%M,	%r           
+MOVE,	%rs1,	%rs2       
+OR,	%rs1,	%rs2      
+AND,	%rs1,	%rs2      
+ADD,	%rs1,	%rs2
+INV,	%rs1        
+TCMP,	%rs1              
+ST,	%rs1,	%rs2
+SFT,	%rs1,	%rs2         
+BA,	X   
+BSB,	Z,	X
+BSB,	N,	X            
+BSB,	C,	X             
+BSB,	O,	X             
+

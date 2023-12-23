@@ -1,0 +1,39 @@
+GEN 1
+MOVE, r63, tempC1
+GEN 2
+MOVE, r63, tempC2
+GEN 3
+MOVE, r63, tempC3
+MOVE, tempC2, tempC4 //tempC4 address t1
+ADD, tempC2, tempC2
+MOVE, r63, tempC5 //tempC 5 value t2
+GEN #maxAddress
+TCMP tempC6
+MOVE, r63, tempC6
+tempC4 mod tempC2--jump2C
+BSB z --jump1C
+tempC4 mod tempC3
+BSB Z --jump1C
+MOVE, tempC5, tempC7
+STORE, tempC4, tempC7
+ADD tempC4, tempC1
+ADD, tempC5, tempC1--jump1C
+BSB, N, [Cout]
+BA --jump2C
+
+---------------------
+LOAD,	%M,	%r
+STORE,	%M,	%r           
+MOVE,	%rs1,	%rs2       
+OR,	%rs1,	%rs2      
+AND,	%rs1,	%rs2      
+ADD,	%rs1,	%rs2
+INV,	%rs1        
+TCMP,	%rs1              
+ST,	%rs1,	%rs2
+SFT,	%rs1,	%rs2         
+BA,	X   
+BSB,	Z,	X
+BSB,	N,	X            
+BSB,	C,	X             
+BSB,	O,	X             

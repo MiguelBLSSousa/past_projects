@@ -1,0 +1,54 @@
+***StoreNonMultiplesOf2And3
+GEN 1
+MOVE, r63, tempE1
+GEN 1
+MOVE, r63, tempE2
+GEN 500
+TCMP, r63
+MOVE, r63, tempE3
+LOAD, tempE2, tempE5
+ADD, tempE2, tempE1 --jump 5E
+MOVE, r63, tempE2 
+ADD, tempE2, tempE3
+BSB, Z, [Eout]
+MOVE, tempE2, tempE4
+LOAD, tempE4, tempE6 --jump4E
+OR, tempE6, r0
+BSB, Z, --jump1E //jump out of loop if value is 0(meaning last entry in main memory)
+MOVE, tempE6, r1
+MOVE, tempE5, r2
+***Modulo function
+OR, r4, r0
+BSB, Z, --jump2E
+BA --jump3E
+MOVE, r0, tempE6 --jump2E
+STORE, tempE4, tempE6 --jump3E
+ADD, tempE4, tempE1
+MOVE, r63, tempE4
+BA --jump4E
+***ReconstructMainMemory ||jump1E
+BA, --jump5E
+
+
+
+
+
+
+
+---------------------
+LOAD,	%rs1,	%rs2
+STORE,	%rs1,	%rs2           
+MOVE,	%rs1,	%rs2       
+OR,		%rs1,	%rs2      
+AND,	%rs1,	%rs2      
+ADD,	%rs1,	%rs2
+INV,	%rs1        
+TCMP,	%rs1              
+ST,		%rs1,	%rs2
+SFT,	%rs1,	%rs2         
+BA,		%rs1   
+BSB,	Z,		%rs1
+BSB,	N,		%rs1           
+BSB,	C,		%rs1            
+BSB,	O,		%rs1            
+GEN		X[11 bits]

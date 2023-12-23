@@ -1,0 +1,37 @@
+INV, r1
+MOVE, r63, temp1
+AND, temp1, r2
+MOVE, r63, temp1
+INV, r2 
+MOVE, r63, temp2
+AND, temp2, r1
+MOVE, r63, temp2
+OR, temp1, temp2
+MOVE, r63, r3
+BA, [out]
+
+-----------
+x xor y = z
+x r1
+y r2
+z r3
+
+X'*Y+X*Y'= z
+
+
+LOAD,	%M,	%r
+STORE,	%M,	%r           
+MOVE,	%rs1,	%rs2       
+OR,	%rs1,	%rs2      
+AND,	%rs1,	%rs2      
+ADD,	%rs1,	%rs2
+INV,	%rs1        
+TCMP,	%rs1              
+ST,	%rs1,	%rs2
+SFT,	%rs1,	%rs2         
+BA,	X   
+BSB,	Z,	X
+BSB,	N,	X            
+BSB,	C,	X             
+BSB,	O,	X             
+

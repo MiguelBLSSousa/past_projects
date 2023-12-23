@@ -1,0 +1,46 @@
+temp1 empty address
+temp2 current address
+temp3 current address value
+
+GEN, 1
+MOVE, r63, tempD4
+GEN 2047 //max address you want to sort
+TCMP 2047
+MOVE r63 tempD5
+MOVE, r0, tempD1
+MOVE, r0, tempD2
+LOAD, tempD2, tempD3 --jump2D
+OR, r0, tempD3
+BSB, Z, --jump1D
+STORE, tempD1, tempD3
+ADD, tempD1, tempD4
+MOVE, r63, tempD1 //increase empty address when moving value into it
+ADD, tempD2, tempD4 --jump1D //increase current address
+MOVE, r63, tempD2 //check if 
+ADD, tempD2, tempD5
+BSB, N, [out]
+BA, --jump2D
+
+
+
+
+
+
+
+---------------------
+LOAD,	%rs1,	%rs2
+STORE,	%rs1,	%rs2           
+MOVE,	%rs1,	%rs2       
+OR,		%rs1,	%rs2      
+AND,	%rs1,	%rs2      
+ADD,	%rs1,	%rs2
+INV,	%rs1        
+TCMP,	%rs1              
+ST,		%rs1,	%rs2
+SFT,	%rs1,	%rs2         
+BA,		%rs1   
+BSB,	Z,		%rs1
+BSB,	N,		%rs1           
+BSB,	C,		%rs1            
+BSB,	O,		%rs1            
+GEN		X[11 bits]

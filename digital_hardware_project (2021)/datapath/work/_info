@@ -1,0 +1,297 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/matth/Documents/module 5/Project/RegisterFile
+Ealu
+Z0 w1635931416
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/matth/Documents/module 5/Project/datapath
+Z5 8C:\Users\matth\Documents\module 5\Project\datapath\ALU.vhd
+Z6 FC:\Users\matth\Documents\module 5\Project\datapath\ALU.vhd
+l0
+L13
+V`DzizH=aA;_bU37HSjWV60
+!s100 mIT]4Y7L7=`E71]CY3GB12
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1635933230
+!i10b 1
+Z9 !s108 1635933230.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\ALU.vhd|
+Z11 !s107 C:\Users\matth\Documents\module 5\Project\datapath\ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 `DzizH=aA;_bU37HSjWV60
+l28
+L26
+VN_SQQomWT]l?jR^Hz_JW<2
+!s100 `DSL=ei[h3NJJjF@Lg2kL1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtrolunit
+Z14 w1635931480
+R1
+R2
+R3
+R4
+Z15 8C:\Users\matth\Documents\module 5\Project\datapath\controlUnit.vhd
+Z16 FC:\Users\matth\Documents\module 5\Project\datapath\controlUnit.vhd
+l0
+L13
+VlbC3MmZl>fdN5ONKT45Sb1
+!s100 ZcX:96?D6N:Xdkf?4;WBQ1
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\controlUnit.vhd|
+Z18 !s107 C:\Users\matth\Documents\module 5\Project\datapath\controlUnit.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 11 controlunit 0 22 lbC3MmZl>fdN5ONKT45Sb1
+l31
+L29
+VJGg@0[lmh<lKNhORX;IjS2
+!s100 0c3>_:56F<FDLhmE6B:ai3
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Edatapath
+Z19 w1635933227
+R1
+R2
+R3
+R4
+Z20 8C:\Users\matth\Documents\module 5\Project\datapath\dataPath.vhd
+Z21 FC:\Users\matth\Documents\module 5\Project\datapath\dataPath.vhd
+l0
+L13
+VnG::YoI=MJNF?0h`M[hlK3
+!s100 Nfk1N39U6>:D<e]JLEQUK0
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\dataPath.vhd|
+Z23 !s107 C:\Users\matth\Documents\module 5\Project\datapath\dataPath.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 8 datapath 0 22 nG::YoI=MJNF?0h`M[hlK3
+l80
+L29
+V8ld38@[VG6TnJzeI17iWJ1
+!s100 UHcPdH0iH12h[1V]fY<2F0
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Einstructionmemory
+Z24 w1635895979
+R1
+R2
+R3
+R4
+Z25 8C:\Users\matth\Documents\module 5\Project\datapath\instructionMemory.vhd
+Z26 FC:\Users\matth\Documents\module 5\Project\datapath\instructionMemory.vhd
+l0
+L13
+VDEgX?kBm<9>?W=EzQ2a[73
+!s100 VI@_f`C25mb271ZUA2zfD3
+R7
+32
+Z27 !s110 1635896293
+!i10b 1
+Z28 !s108 1635896293.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\instructionMemory.vhd|
+Z30 !s107 C:\Users\matth\Documents\module 5\Project\datapath\instructionMemory.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 17 instructionmemory 0 22 DEgX?kBm<9>?W=EzQ2a[73
+l25
+L23
+V22QgSaYQH0JQ=UZMg5F3l1
+!s100 S8GQ6EA7Mh4GGDTAY`^<20
+R7
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R12
+R13
+Emainmemory
+Z31 w1635931451
+R1
+R2
+R3
+R4
+Z32 8C:\Users\matth\Documents\module 5\Project\datapath\mainMemory.vhd
+Z33 FC:\Users\matth\Documents\module 5\Project\datapath\mainMemory.vhd
+l0
+L13
+VacQe_kZWPg0m<aY26Vb6I3
+!s100 A>^F1LJm>=_0P^diAmm6Y1
+R7
+32
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\mainMemory.vhd|
+Z35 !s107 C:\Users\matth\Documents\module 5\Project\datapath\mainMemory.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 10 mainmemory 0 22 acQe_kZWPg0m<aY26Vb6I3
+l29
+L27
+VZ6fcCG7Ed4`ZF<:>m=DZ=0
+!s100 <]SEGB?Q[j^`fXQOcn0zC0
+R7
+32
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Eprocessor
+Z36 w1635932112
+R1
+R2
+R3
+R4
+Z37 8C:\Users\matth\Documents\module 5\Project\datapath\processor.vhd
+Z38 FC:\Users\matth\Documents\module 5\Project\datapath\processor.vhd
+l0
+L13
+V:VUUjb;l2c[QcX@adjcNA3
+!s100 FF1JYFYCoeMOPiDd5AldG0
+R7
+32
+R8
+!i10b 1
+R9
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\processor.vhd|
+Z40 !s107 C:\Users\matth\Documents\module 5\Project\datapath\processor.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+Z41 DEx4 work 9 processor 0 22 :VUUjb;l2c[QcX@adjcNA3
+l60
+L21
+Z42 Vdi@b@ok5D6hmn76Y^<;RL1
+Z43 !s100 1Z8oDDB[b4Pl?FjklA2K<2
+R7
+32
+R8
+!i10b 1
+R9
+R39
+R40
+!i113 1
+R12
+R13
+Eregisterfile
+Z44 w1635931399
+R1
+R2
+R3
+R4
+Z45 8C:\Users\matth\Documents\module 5\Project\datapath\registerFile.vhd
+Z46 FC:\Users\matth\Documents\module 5\Project\datapath\registerFile.vhd
+l0
+L13
+VdcD>?B>KhlW[3c1Tfc<CD3
+!s100 [RdgL2V?4j3flAYSRIi=S0
+R7
+32
+R8
+!i10b 1
+R9
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\matth\Documents\module 5\Project\datapath\registerFile.vhd|
+Z48 !s107 C:\Users\matth\Documents\module 5\Project\datapath\registerFile.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 12 registerfile 0 22 dcD>?B>KhlW[3c1Tfc<CD3
+l33
+L31
+VY^F<DbHbGzHm<ehGiO5Jm2
+!s100 Maj_H;YV@8AhNaccO<7I:0
+R7
+32
+R8
+!i10b 1
+R9
+R47
+R48
+!i113 1
+R12
+R13

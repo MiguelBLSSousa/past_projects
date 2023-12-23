@@ -1,0 +1,86 @@
+LOAD,     561,  60          
+STORE,    562,  61            
+MOVE,     32,   15
+AND,      22,   17            
+OR,       61,   54  
+ADD,      5,   6 
+SFTL,       15, 52     
+SFTR,      26,46     	   
+INV,      15           
+TCMP,     32     
+GEN,    234     
+
+    
+
+
+
+BA,        15              
+BSB,       Z,  34        
+BSB,       N,  23        
+BSB,       C,  24         
+BSB,       O,  34       
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+GEN,    234     
+

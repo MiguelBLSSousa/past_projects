@@ -1,0 +1,30 @@
+GEN 5
+MOVE r63 r1
+GEN x(linker 11 bits)
+SFTL r63 r1
+MOVE r63 r1
+GEN x(rechter 5 bits)
+OR r1 r63
+MOVE r63 r1
+
+-----------
+
+gen x(16 bits)
+x r1
+
+LOAD,	%M,	%r
+STORE,	%M,	%r           
+MOVE,	%rs1,	%rs2       
+OR,	%rs1,	%rs2      
+AND,	%rs1,	%rs2      
+ADD,	%rs1,	%rs2
+INV,	%rs1        
+TCMP,	%rs1              
+ST,	%rs1,	%rs2
+SFT,	%rs1,	%rs2         
+BA,	X   
+BSB,	Z,	X
+BSB,	N,	X            
+BSB,	C,	X             
+BSB,	O,	X             
+
