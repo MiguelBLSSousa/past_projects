@@ -1,0 +1,65 @@
+-- Project          : VHDL Hybrid accumulator-2operand machine
+--                    Digital Hardware by group 
+-- 
+-- File             : mainMemory.vhd
+--
+-- Related File(s)  : 
+
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+ENTITY mainMemory IS
+    PORT (
+	Clk   : IN std_logic;
+	Reset : IN std_logic; -- low active
+	bus_A : IN std_logic_vector(15 DOWNTO 0); --Bus A first 12 bits is memory adress
+	Bus_B : IN std_logic_vector(15 DOWNTO 0); --Bus B data going into mainMemory (DATA IN with respect to main memory)
+	Bus_D : OUT std_logic_vector(15 DOWNTO 0); --Bus D from memory (DATA OUT with respect to main memory)
+	M_Rd : IN std_logic; -- Memory Read
+	M_Wr : IN std_logic -- Memory Write
+	--sel_D : IN std_logic_vector(1 DOWNTO 0)--bits to select rd/wr main memory registers
+	
+      );
+END mainMemory;
+
+
+ARCHITECTURE bhv OF mainMemory IS
+
+BEGIN
+
+PROCESS(clk, reset, bus_a, bus_b, m_rd, m_wr)
+	CONSTANT max_address: integer :=4096;
+	TYPE main_memory_array IS ARRAY (0 to (max_address-1)) of std_logic_vector(7 DOWNTO 0);
+	VARIABLE content_MM_cell : main_memory_array:=(
+		others => (others => '0')
+		);
+	VARIABLE address_0: natural; 
+	VARIABLE address_1: natural; 
+	VARIABLE binary_address_0 : std_logic_vector(11 DOWNTO 0) := (others=>'0');
+   VARIABLE binary_address_1 : std_logic_vector(11 DOWNTO 0) := (others=>'0'); 
+BEGIN
+	IF reset='0' then
+		address_0 := 0;
+		address_1 := 1;
+		Bus_D <= "0000000000000000";
+
+	ELSIF falling_edge(Clk) THEN
+	
+	--Optional: change this wait statement into an if statement. 
+	binary_address_0 := (bus_a(10 DOWNTO 0) & "0"); 
+	binary_address_1 := (bus_a(10 DOWNTO 0) & "1"); 
+   	address_0 := to_integer(unsigned(binary_address_0));
+	address_1:= to_integer(unsigned(binary_address_1)); 
+		IF M_Wr='1' THEN 
+			content_MM_cell(address_0):=Bus_B(15 DOWNTO 8); 
+			content_MM_cell(address_1):=Bus_B(7 DOWNTO 0);
+		ELSIF M_Rd='1' THEN 
+			Bus_D <= (content_MM_cell(address_0)) & (content_MM_cell(address_1));
+		ELSE 
+			Bus_D <= (others => '-');
+		END IF;
+	END IF;
+END PROCESS;
+END bhv;

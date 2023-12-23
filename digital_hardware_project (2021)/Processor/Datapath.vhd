@@ -1,0 +1,73 @@
+-- Project          : VHDL Hybrid accumulator-2operand machine
+--                    Digital Hardware by group 
+-- 
+-- File             : dataPath.vhd
+--
+-- Related File(s)  : controlUnit, registerFile, ALU, instructionMemory
+
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+ENTITY dataPath IS
+  	PORT (
+    		Clk : IN std_logic;
+		Reset : IN std_logic;
+		Sel_A : IN std_logic_vector(5 DOWNTO 0);--sel_A
+		Sel_B : IN std_logic_vector(5 DOWNTO 0);--sel_B
+		Bus_AMem : OUT std_logic_vector(15 downto 0);
+		Bus_BMem : OUT std_logic_vector(15 downto 0);
+		Bus_D : IN std_logic_vector(15 DOWNTO 0);--read from memory --Bus_D
+		I_Index : IN integer;
+		IR_Bit: OUT std_logic;
+		opvalue : IN std_logic_vector(2 DOWNTO 0); -- op code for ALU
+		Branch_Conditions : OUT std_logic_vector(3 DOWNTO 0); -- branch conditions bits from ALU
+		jump_address_cu: out integer
+  	);
+END ENTITY dataPath;
+
+ARCHITECTURE structure OF dataPath IS
+
+COMPONENT RegisterFile IS
+    	PORT (
+		Clk : IN std_logic;
+		Reset : IN std_logic;
+		Bus_A : OUT std_logic_vector(15 DOWNTO 0); --bus to rs1 --Bus_A
+		Sel_A : IN std_logic_vector(5 DOWNTO 0);--sel_A
+		Bus_B : OUT std_logic_vector(15 DOWNTO 0); --bus to rs2 --Bus_B
+		Sel_B : IN std_logic_vector(5 DOWNTO 0);--sel_B
+		Bus_C : IN std_logic_vector(15 DOWNTO 0);--alu output --Bus_C
+		Bus_D : IN std_logic_vector(15 DOWNTO 0);--read from memory --Bus_D
+		I_Index : IN integer;
+		IR_Bit: OUT std_logic;
+		jump_address: out integer
+    	);
+END COMPONENT registerFile;
+
+COMPONENT ALU IS
+    	PORT (
+		Clk     : IN std_logic;
+		Reset : IN std_logic; -- low active
+		Bus_A : IN std_logic_vector(15 DOWNTO 0); --Bus A from registerFile
+		Bus_B : IN std_logic_vector(15 DOWNTO 0); --Bus B from registerFile
+		opvalue : IN std_logic_vector(2 DOWNTO 0); -- op code for ALU
+		Bus_C : OUT std_logic_vector(15 DOWNTO 0); --Bus C to registerFile
+		Branch_Conditions : OUT std_logic_vector(3 DOWNTO 0) -- branch conditions bits from ALU
+	);
+END COMPONENT ALU;
+
+SIGNAL Bus_A, Bus_B, Bus_C: std_logic_vector(15 DOWNTO 0);
+SIGNAL jump_address: integer;
+ 
+BEGIN
+  
+RF: registerFile PORT MAP(Clk, Reset, Bus_A, Sel_A, Bus_B, Sel_B, Bus_C, Bus_D, I_Index, IR_Bit, jump_address);
+AL : ALU PORT MAP(Clk, Reset, Bus_A, Bus_B, opvalue, Bus_C, Branch_Conditions);
+
+Bus_AMem <= Bus_A;
+Bus_BMem <= Bus_B;
+jump_address_cu <= jump_address;
+
+END ARCHITECTURE structure;
+
