@@ -1,0 +1,14 @@
+{C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity textio
+-- Compiling architecture syn of textio
+** Error: C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd(20): (vcom-1136) Unknown identifier "hread".
+** Error: C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd(21): (vcom-1136) Unknown identifier "to_hstring".
+** Error: C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd(21): Type error resolving infix expression "&" as type std.STANDARD.STRING.
+** Error: C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd(22): (vcom-1136) Unknown identifier "hwrite".
+** Error: C:/Users/matth/Documents/module 5/Project/Textio/textio.vhd(29): VHDL Compiler exiting
+
+} {8.0 13.0} {}}
