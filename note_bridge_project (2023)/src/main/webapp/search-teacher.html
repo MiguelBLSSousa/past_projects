@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Search Teacher</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/search-teacher.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/music-note.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.jsp");
+            $("#mobile-navbar").load("mobile-navbar.jsp");
+            $("#side-bar-insert").load("side-bar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+<section class="header" id="header"></section>
+
+<section class="main-content">
+    <div class="mobile-navbar" id="mobile-navbar" style="height: 0"></div>
+    <div id="side-bar-insert"></div>
+    <div class="page-content">
+        <div class="container">
+            <div class="teachers">
+                <div id="teachers" class="wrap scrollable-y">
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="/img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-content">
+                            <div>
+                                <p class="name shine"></p>
+                                <img src="./img/sidebarmenu.png" alt=\"profile-pic\"/>
+                            </div>
+                            <p class="rating"><span class="shine"></span></p>
+                            <p class="instruments"><span class="shine"></span></p>
+                            <p class="location"><span class="shine"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterbar">
+                <h1>Filter</h1>
+                <h3>Teachers:</h3>
+                <input class="search" placeholder="Teacher..." type="text" id="name" oninput="filterTeachers()">
+                <h3>Location:</h3>
+                <input class="search" placeholder="Location..." type="text" id="location" oninput="filterTeachers()">
+                <h3>Instrument:</h3>
+                <input class="search" placeholder="instrument..." type="text" id="instrument" oninput="filterTeachers()">
+                <h3>Rating:</h3>
+                <div>
+                    <input class="search" placeholder="1..." type="number" id="rating-min" value="0" min="0" max="5" oninput="filterTeachers()">
+                    <input class="search" placeholder="5..." type="number" id="rating-max" value="5" min="1" max="5" oninput="filterTeachers()">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer" id="footer"></section>
+<script onload="loadTeachers()" type="text/javascript" async src="scripts/search-teachers.js"></script>
+
+</body>
+</html>

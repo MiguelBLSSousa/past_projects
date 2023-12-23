@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Map</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/map.css" rel="stylesheet">
+    <link href="css/drop-down.css" rel="stylesheet">
+    <link href="img/music-note.png" rel="icon" type="image/png">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.jsp");
+            $("#mobile-navbar").load("mobile-navbar.jsp");
+            $("#side-bar-insert").load("side-bar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+
+<section class="header" id="header"></section>
+
+<section class="main-content">
+    <div class="mobile-navbar" id="mobile-navbar" style="height: 0"></div>
+    <div id="side-bar-insert"></div>
+    <div class="page-content">
+        <div class="map-filter">
+            <h1>Map Filter<span id="close-btn-filter" onclick="toggleFilter()" class="close-btn">v</span></h1>
+            <div id="filter" class="map-filter-form">
+                <div class="search">
+                    <p>Search instruments</p>
+                    <input id="search" name="search-instuments" oninput="searchInstruments()"
+                           placeholder="Instrument..." type="search">
+                </div>
+                <ul class="scrollable-y" id="instuments-filter"></ul>
+                <br>
+                <div class="search">
+                    <p>Search Location</p>
+                    <input id="location_search" name="search_zip"
+                           placeholder="Zipcode" type="search">
+                    <input id="submit" type="button" onclick="filterAddress()" value="Find now">
+                    <input id="clear-address" type="button" onclick="clearAddress()" value="Clear">
+                </div>
+                <nav>
+                    <input id="toggle" type="checkbox" checked>
+                    <h2>Area Radius</h2>
+                    <ul>
+                        <li><a onclick="setScaleMultiplier(6)">3 KM</a></li>
+                        <li><a onclick="setScaleMultiplier(10)">5 KM</a></li>
+                        <li><a onclick="setScaleMultiplier(20)">10 KM</a></li>
+                        <li><a onclick="setScaleMultiplier(40)">20 KM</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="map-content">
+            <div id="map">
+                <div id="close-btn" class="close-btn" onclick="closeZip()" style="display: none">x</div>
+                <div id="zip-container" class="zip-container scrollable-x" style="display:none;"></div>
+                <div id="loader" class="loader">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="footer" id="footer"></section>
+<script onload="loadData()" src="scripts/map.js" type="text/javascript"></script>
+</body>
+
+</html>
+<!--to commit-->

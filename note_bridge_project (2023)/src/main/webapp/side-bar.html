@@ -1,0 +1,23 @@
+<div class="side-bar-container">
+    <img alt="open sidebar" class="side-bar-button-2" onclick="sidebarSlide()" src="img/sidebarmenu.png" type="button">
+    <ul class="side-bar closed" id="side-bar">
+        <li><a href="./profile.jsp">Profile</a></li>
+        <li><a href="./edit-profile.jsp">Edit Profile</a></li>
+        <li><a href="./map.html">Map</a></li>
+        <li><a href="./my-schedule.jsp">Schedule</a></li>
+        <li><a href="./search-teacher.html">Search</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+    </ul>
+    <script>
+        function sidebarSlide() {
+            let side = document.getElementById("side-bar");
+            if (side.classList.contains("opened")) {
+                side.classList.remove("opened");
+                side.classList.add("closed");
+            } else {
+                side.classList.remove("closed");
+                side.classList.add("opened");
+            }
+        }
+    </script>
+</div>

@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "lat": 52.2098579,
+      "long": 6.8805504,
+      "instrument": "piano"
+    },
+    {
+      "lat": 52.9098579,
+      "long": 6.3805504,
+      "instrument": "guitar"
+    },
+    {
+      "lat": 51.9098579,
+      "long": 6.6804504,
+      "instrument": "piano"
+    },
+    {
+      "lat": 52.6098579,
+      "long": 6.3403504,
+      "instrument": "guitar"
+    },
+    {
+      "lat": 52.6548579,
+      "long": 6.6403504,
+      "instrument": "bass"
+    },
+    {
+      "lat": 51.6398579,
+      "long": 6.1403504,
+      "instrument": "drums"
+    }
+  ]
+}

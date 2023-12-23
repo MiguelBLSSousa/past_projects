@@ -1,0 +1,227 @@
+@import URL("./colors.css");
+
+.main-content {
+    background-image: url("../img/music-notes.png");
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid var(--content);
+    border-radius: 15px;
+    width: 450px;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 10px;
+}
+
+.reg-form > form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-form > form div.page-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.reg-form > form div.page-buttons > * {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.reg-form > .account-selector {
+    padding: 10px 0;
+    display: flex;
+}
+
+.reg-form > .account-selector > p {
+    padding: 5px;
+    width: 125px;
+    border-bottom: 1px solid var(--content);
+    text-align: center;
+}
+
+.reg-form > .account-selector > p:hover {
+    border-bottom: 3px solid var(--content);
+    cursor: pointer;
+}
+
+.reg-form > .account-selector > .selected {
+    font-weight: bold;
+    border-bottom: 3px solid var(--background);
+}
+
+.reg-form > form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.reg-form > form p {
+    max-width: 270px;
+}
+
+.reg-form > form input[type="text"], .reg-form > form input[type="password"], .reg-form > form input[type="email"] {
+    width: 270px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.reg-form > form input[type="text"]:hover, .reg-form > form input[type="password"]:hover, .reg-form > form input[type="email"]:hover {
+    border-color: var(--content);
+}
+
+.reg-form > form input[type="text"]:focus, .reg-form > form input[type="password"]:focus, .reg-form > form input[type="email"]:focus {
+    border: 3px solid var(--button-selected-color);
+    outline: none;
+}
+
+.reg-form > form input[type="submit"] {
+    align-self: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: var(--background);
+}
+
+.reg-form > form input[type="submit"]:hover {
+    background-color: var(--button-selected-color);
+}
+
+.reg-form > form input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+.reg-form p.center {
+    text-align: center;
+}
+
+.reg-form a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--background);
+}
+
+.reg-form a:hover {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--button-selected-color);
+}
+
+.reg-form p {
+    font-size: 15px;
+}
+
+.reg-form h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.reg-form h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    max-width: 290px;
+    margin-bottom: 5px;
+}
+
+.reg-form button {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: var(--background);
+}
+
+.reg-form button.page-button, .reg-form input[type="submit"]#submit {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: var(--background);
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.reg-form button:hover, .reg-form input[type="submit"]#submit:hover {
+    background-color: var(--button-selected-color);
+}
+
+.reg-form span.interest {
+    font-weight: bold;
+    color: var(--background);
+}
+
+.reg-form .progress-bar {
+    margin-top: 10px;
+    display: flex;
+    width: 275px;
+    background-color: #e5e5e5;
+    height: 10px;
+    justify-content: left;
+    border-radius: 15px;
+}
+
+.reg-form .progress-bar > .slider {
+    height: 10px;
+    border-radius: 15px;
+    background: repeating-linear-gradient(60deg, var(--background) 0px 8px, var(--button-selected-color) 8px 16px);
+    transition: width 0.4s ease-out;
+}
+
+.reg-form .error {
+    background-color: #ff5f5f;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 675px) {
+    .reg-form {
+        margin: 0;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        padding-top: 20px;
+    }
+}
+
+.instruments-filter-scrollable {
+    max-height: 200px; /* Adjust the desired height */
+    overflow-y: auto;
+}
+
+.bank-select .select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 300%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}

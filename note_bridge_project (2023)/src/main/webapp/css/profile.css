@@ -1,0 +1,366 @@
+.container {
+    display: flex;
+    border-radius: 15px;
+    border: 3px solid var(--accent);
+    background-color: var(--content);
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container .role {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 60px;
+}
+
+.container .details {
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    margin: 0 10px 10px;
+}
+
+.details > div {
+    display: flex;
+    flex: 9999;
+}
+
+.details > .profile-pic {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.profile-pic img {
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    border: 2px solid #323232;
+    border-radius: 10px;
+}
+
+
+.details .personal-info {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    width: 100%;
+    text-align: right;
+}
+
+.details p {
+    height: 46px;
+}
+
+.details .personal-info .name{
+    text-overflow: ellipsis;
+    white-space: break-spaces;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-all;
+}
+
+.details div > p {
+    width: 100%;
+    border-bottom: 2px solid var(--background);
+}
+
+.details .contents {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    justify-content: center;
+    width: 30%;
+    text-align: left;
+}
+
+.container .statistics {
+    display: flex;
+    height: 100%;
+    margin: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.statistics video {
+    border-radius: 10px;
+    width: 320px;
+    height: 240px;
+}
+
+.statistics h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.statistics p {
+    font-size: 1.3em;
+}
+
+.statistics .description {
+    margin-top: 20px;
+    height: 150px;
+    width: 450px;
+    word-break: break-all;
+    overflow : hidden;
+}
+
+.statistics .availability {
+    width: 100%;
+    height: 220px;
+}
+
+.statistics .availability > div {
+    display: flex;
+    width: 100%;
+}
+
+.statistics .availability .time {
+    text-align: right;
+    width: 100%;
+}
+
+.statistics .availability p {
+    width: 100%;
+    border-bottom: 2px solid var(--background);
+}
+
+.statistics .instruments p span {
+    color: var(--background);
+    font-weight: bolder;
+}
+
+.statistics .profile-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics .book-lesson-btn {
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: var(--background);
+    align-self: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.statistics .expertise {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.statistics .expertise .items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 320px;
+    margin-bottom: 5px;
+    align-content: flex-start;
+    gap: 5px;
+}
+
+.statistics .expertise .item {
+    display: flex;
+    width: 340px;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.statistics .expertise .item .image {
+    width: 50px;
+    height: 50px;
+}
+
+.statistics .expertise .item > div {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics .expertise .item > div .progress-bar{
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics .expertise .item > div .instrument-level {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.statistics .expertise .item .progress-bar {
+    display: flex;
+    width: 275px;
+    background-color: #e5e5e5;
+    height: 10px;
+    justify-content: left;
+    border-radius: 15px;
+}
+
+.statistics .expertise .item .instrument {
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 25px;
+}
+
+.statistics .expertise .item .level{
+    text-align: right;
+    height: 25px;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    white-space: break-spaces;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-all;}
+
+.statistics .expertise .item .progress-bar .slider {
+    height: 10px;
+    border-radius: 15px;
+    accent-color: var(--background);
+    background-color: white;
+    transition: width 0.4s ease-out;
+    background-clip: content-box;
+}
+
+.statistics .expertise .item .progress-bar .slider::-webkit-slider-thumb {
+    background: var(--background);
+    height: 10px;
+    -webkit-appearance: none;
+}
+
+
+.statistics .expertise .change-exp-btn:hover {
+    cursor: pointer;
+}
+
+.statistics .expertise .change-exp-btn {
+    height: 10%;
+    width: 85%;
+    font-size: 100%;
+    border-radius: 15px;
+    background-color: var(--background);
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.statistics .book-lesson-btn:hover {
+    cursor: pointer;
+}
+
+.container .profile-border {
+    border-bottom: 3px solid var(--accent);
+}
+
+.container .all-reviews {
+    display: flex;
+}
+
+.all-reviews .see-reviews-btn:hover {
+    cursor: pointer;
+}
+
+.all-reviews .see-reviews-btn {
+    min-width: 300px;
+    max-width: 400px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: var(--background);
+    align-self: center;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.all-reviews .reviews {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reviews .review {
+    flex-grow: 1;
+    width: 30%;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+}
+
+.review div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .name {
+    text-align: left;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 10%;
+}
+
+.review .text {
+    text-overflow: ellipsis;
+    white-space: break-spaces;
+    overflow: hidden;
+    width: 100%;
+    height: 75%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-all;
+}
+
+.review .rating {
+    text-align: right;
+    color: #ffba0a;
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        border: none;
+        border-radius: 0;
+    }
+
+    .details .contents {
+        margin: 0;
+    }
+}

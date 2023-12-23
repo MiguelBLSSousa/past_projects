@@ -1,0 +1,152 @@
+[
+  {
+    "name": "piano",
+    "url": "img/icon-piano.png",
+    "pin": "img/pin-piano.png"
+  },
+  {
+    "name": "guitar",
+    "url": "img/icon-guitar.png",
+    "pin": "img/pin-guitar.png"
+  },
+  {
+    "name": "bass",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "drums",
+    "url": "img/icon-drums.png",
+    "pin": "img/pin-drums.png"
+  },
+  {
+    "name": "accordion",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "bagpipes",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "banjo",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "bongo drums",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "bugle",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "cello",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "clarinet",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "cymbals",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "flute",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "french horn",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "harmonica",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "harp",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "maracas",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "organ",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "pan flute",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "recorder",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "saxophone",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "sitar",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "tambourine",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "triangle",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "trombone",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "trumpet",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "tuba",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "ukulele",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "violin",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  },
+  {
+    "name": "xylophone",
+    "url": "img/icon-musicnode.png",
+    "pin": "img/pin-musicnode.png"
+  }
+]

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Frequently Asked Questions</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/music-note.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.jsp");
+            $("#mobile-navbar").load("mobile-navbar.jsp");
+            $("#side-bar-insert").load("side-bar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+<style>
+    p{
+        padding-left: 1%;
+    }
+
+    .content {
+        margin: 30px auto 30px;
+        display: grid;
+        border-radius: 15px;
+        border: 3px solid var(--accent);
+        background-color: var(--content);
+        height: 100%;
+        width: 50%;
+        align-self: center;
+        flex-direction: column;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .accordion {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: var(--content);
+        color: #000000;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        transition: 0.4s;
+        display: flex;
+        align-items:center;
+    }
+
+    .accordion:hover {
+        background-color: #d1acef;
+    }
+
+    .question {
+        border-radius: 10px;
+        border: 1px solid #c4bfbf;
+        background-color: var(--accent);
+        padding-top: 4px;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<section class="header" id="header"></section>
+<section class="main-content">
+    <div class="mobile-navbar" id="mobile-navbar" style="height: 0"></div>
+    <div id="side-bar-insert"></div>
+    <div class="heading-block-faq">
+        <div class="content">
+            <div class="accordion">
+                <p>Where do the lessons happen?</p>
+                </div>
+                <div class="question" style="display: none">
+                    <p> Depending on the students and the teachers preference lessons can happen in 3 ways: at the teachers house, at the students house or online.</p>
+                </div>
+            <div class="accordion">
+                <p>What is the price? How long are the lessons?</p>
+            </div>
+                <div class="question" style="display: none">
+                    <p> Note-Bridge offers lessons at a price range of 10-15 euros per hour. The duration of each lesson may vary depending on the teacher and the student's preferences, but typically they last for one hour.</p>
+                </div>
+            <div class="accordion">
+                <p>Do I need an instrument?</p>
+            </div>
+                <div class="question" style="display: none">
+                    <p> No! At Note-Bridge our goal is to give everyone a chance to play music. If you wish to play an instrument you do not have, simply schedule the lesson at the teachers house.</p>
+                </div>
+            <div class="accordion">
+                <p>Who are the teachers?</p>
+            </div>
+                <div class="question" style="display: none">
+                    <p> The teachers on Note-Bridge are experienced and qualified musicians who are passionate about music education. . Note-Bridge carefully selects and screens its teachers to ensure that they are knowledgeable, professional.</p>
+                </div>
+                <div class="accordion">
+                    <p>What if I need to cancel a lesson?</p>
+                </div>
+                    <div class="question" style="display: none">
+                        <p> If you need to cancel or reschedule a lesson, don't worry. Simply let your teacher know as soon as possible, and they will work with you to find a new time that works for both of you. If you need to cancel a lesson completely, the money will be returned to you immediately.</p>
+                    </div>
+        </div>
+    </div>
+</section>
+<section class="footer" id="footer"></section>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>

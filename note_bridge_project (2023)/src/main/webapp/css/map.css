@@ -1,0 +1,294 @@
+@import url("./colors.css");
+
+.map-content {
+    min-width: 500px;
+    border: none;
+    flex: 1;
+    height: 100%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    overflow: hidden;
+    border-right: 5px solid var(--accent);
+    border-top: 5px solid var(--accent);
+    border-bottom: 5px solid var(--accent);
+}
+
+#map {
+    background-color: var(--accent);
+}
+
+.map-filter {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background-color: var(--content);
+    border-left: 5px solid var(--accent);
+    border-top: 5px solid var(--accent);
+    border-bottom: 5px solid var(--accent);
+}
+
+.map-filter h1 {
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    width: calc(100%);
+}
+
+.map-filter span.close-btn {
+    display: none;
+}
+
+.map-filter-form {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.map-filter-form > p {
+    font-weight: bold;
+}
+
+.search {
+    width: 200px;
+    height: fit-content;
+    padding: 3px 18px;
+    margin-bottom: 3px;
+    background-color: var(--accent);
+    align-items: center;
+    border-radius: 15px;
+}
+
+.search > p {
+    font-weight: bold;
+}
+
+.map-filter-form input[type="search"] {
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    margin-bottom: 3px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.map-filter-form input[type=button] {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    background-color: var(--background);
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.map-filter-form input[type=button]:hover {
+    background-color: var(--button-selected-color);
+}
+
+.map-filter-form > ul {
+    max-height: 207px;
+    overflow-y: scroll;
+}
+
+.map-filter-form > ul > li {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    height: 60px;
+    padding: 3px 3px;
+    padding-left: 20px;
+    margin-bottom: 3px;
+    background-color: var(--accent);
+    align-items: center;
+    border-radius: 15px;
+}
+
+.map-filter-form > ul > li p {
+    padding-left: 10px;
+}
+
+.map-filter-form > ul > li input[type="checkbox"] {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--background);
+}
+
+.map-filter-icon {
+    background: none;
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page-content {
+    display: flex;
+}
+
+#map .zip-container {
+    position: absolute;
+    display: flex;
+    background-color: rgba(42, 42, 42, 0.2);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    gap: 20px;
+    align-items: center;
+    overflow-x: auto;
+}
+
+#map .close-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 210px;
+    margin-left: 10px;
+    z-index: 1;
+    pointer-events: visible;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.zip-container .teacher {
+    display: flex;
+    background: linear-gradient(-45deg, #323232, #525252);
+    width: 200px;
+    min-width: 200px;
+    height: 160px;
+    min-height: 160px;
+    border-radius: 15px;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.zip-container .teacher .profile-pic {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.zip-container .teacher .name {
+    color: white;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.zip-container .teacher .instruments {
+    color: var(--content);
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.loader .loading-bar {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 50px solid #d9d9d9;
+    border-top-color: #ce47ff;
+    animation: spinner 1s ease-in-out infinite;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 1080px) {
+    .page-content {
+        padding: 20px 10px;
+        height: unset;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .map-filter {
+        border-right: 5px solid var(--accent);
+        border-bottom: none;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: auto;
+        flex: 0;
+    }
+
+    .map-content {
+        flex: 1;
+        min-width: 70%;
+        min-height: 200px;
+        max-height: 800px;
+        border-left: 5px solid var(--accent);
+        border-top: none;
+        border-bottom-left-radius: 14px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .map-filter span.close-btn {
+        position: absolute;
+        display: inline-block;
+        margin-left: 10px;
+        content: "v";
+        pointer-events: visible;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        border-radius: 5px;
+        justify-content: center;
+    }
+
+    .loader .loading-bar {
+        width: 100px;
+        height: 100px;
+        border-width: 30px;
+    }
+}

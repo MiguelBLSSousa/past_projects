@@ -1,0 +1,218 @@
+.days {
+    --days-column-width: 40px;
+    --days-column-height: 40px;
+
+    font-size: 0.8em;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    background: var(--accent);
+    padding-right: 20px;
+}
+
+.days > .times {
+    display: flex;
+    box-sizing: border-box;
+    min-width: var(--days-column-width);
+    flex-grow: 0;
+    flex-direction: column;
+    gap: 2px;
+    background: var(--button-selected-color);
+    padding: 20px 0;
+}
+
+.days > .times > .time {
+    display: inline-flex;
+    width: var(--days-column-width);
+    height: var(--days-column-height);
+    border: 1px solid transparent;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.days > .times > .agenda {
+    background-image: url("../img/agenda.png");
+    background-size: auto 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.days > .times > .agenda:hover {
+    background-color: var(--content);
+}
+
+.days > .day {
+    display: flex;
+    box-sizing: border-box;
+    min-width: var(--days-column-width);
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 2px;
+    padding: 20px 0;
+}
+
+.days > .day > .slot {
+    width: 100%;
+    height: var(--days-column-height);
+    background: white;
+    border: 1px solid black;
+}
+
+.days > .day > .slot:not(.type):not(.active):not(.closed):hover{
+    background-color: #494949;
+    cursor: pointer;
+}
+
+.days > .day > .slot.active {
+    background-color: #90ff00;
+}
+
+.days > .day > .slot.active:hover {
+    background-color: #bcff5e;
+    cursor: pointer;
+}
+
+.days > .day > .slot.closed {
+    background-color: #ff0022;
+}
+
+.days > .day > .slot.closed:hover {
+    background-color: #a10014;
+}
+
+.days > .day > .type {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.days > .day > .type > .week-name {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.days > .day > .type > .date {
+
+}
+
+/*calender box*/
+.my-calendar-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 44, 44, 0.19);
+    z-index: 1;
+    justify-content: center;
+}
+
+.my-calendar {
+    min-width: 250px;
+    max-width: 500px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.my-calendar .my-calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.my-calendar .my-calendar-header .my-calbutton {
+    width: 30px;
+    height: 30px;
+    background-color: var(--content);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.my-calendar .my-calendar-header .date {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my-calendar .my-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    text-align: center;
+}
+
+.my-calendar .my-calendar-grid .day-cell {
+    padding: 5px;
+    background-color: var(--content);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.my-calendar .my-calendar-grid .day-cell-today {
+    background-color: var(--background);
+}
+
+.my-calendar .my-calendar-grid .day-cell:hover, .my-calendar .my-calendar-header .my-calbutton:hover {
+    background-color: var(--button-selected-color);
+}
+
+.booking-modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.booking-modal-container .booking-modal {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.booking-modal-container .booking-modal .booking-lesson-button {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    width: 75px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--content);
+}
+
+.booking-modal-container .booking-modal .booking-lesson-button:hover {
+    background-color: var(--button-selected-color);
+}
+
+

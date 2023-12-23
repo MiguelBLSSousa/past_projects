@@ -1,0 +1,129 @@
+@import url("./colors.css");
+
+.content {
+    background-image: url("../img/music-notes.png");
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.content p {
+    font-weight: bold; 
+}
+
+.edit-page-content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container {
+    margin: 30px auto 20px;
+    display: grid;
+    border-radius: 15px;
+    border: 3px solid var(--accent);
+    background-color: var(--content);
+    align-self: center;
+    flex-direction: column;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"]{
+    width: 98%;
+    height: 115%;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+}
+
+#info-save {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(141, 81, 189);
+}
+
+#info-save:hover {
+    background-color: rgb(154, 121, 176);
+}
+
+#discard{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d8b9ee;
+    color: black;
+    text-decoration: none;
+}
+
+#discard:hover{
+    background-color: #c1bec5;
+}
+
+.page-button {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #525252;
+    margin: 10px 10px 3px 3px;
+}
+
+.instruments {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #f5f5dc;
+}
+
+.container .subdivision {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.container li:last-child .subdivision {
+    border-bottom: 0;
+}
+
+.container li.open .subdivision {
+    color: #ce47ff;
+}
+
+.submenu {
+    padding: 10px 20px;
+    display: none;
+    background: #d8b9ee;
+    font-size: 14px;
+}
+
+.container .submenu .story {
+    width: 100%;
+    height: 100%;
+}
+
+.sub {
+    padding-bottom: 10px;
+}
+
+.submenu li {
+    border-bottom: 1px solid #d8b9ee;
+    list-style-type: none;
+}
+
+
+
+
+

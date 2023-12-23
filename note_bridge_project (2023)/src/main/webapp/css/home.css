@@ -1,0 +1,70 @@
+@import url("./colors.css");
+
+.heading-block {
+    background-image: url("../img/homepage-piano-background-v2.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    width: 100%;
+    flex: 1;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-block-faq {
+    background-image: url("../img/homepage-piano-background-v2.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+    width: 100%;
+    flex: 1;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-block > h1 {
+    font-size: max(6vw, 20px);
+    padding-left: 25px;
+}
+
+.search-container {
+    margin: 25px 20px 0;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+input#search {
+    width: 1000px;
+    height: 60px;
+    color: black;
+    border: thick solid black;
+    font-size: larger;
+    font-weight: bold;padding-left: 10px;
+}
+
+input#submit {
+    width: 100px;
+    height: 60px;
+    background: black;
+    color: white;
+    border: 1px black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+input#search:focus {
+    outline: none;
+}
+
+input#submit:hover {
+    background: #323232;
+    color: #fff;
+    border: 1px solid grey;
+    text-shadow: none;
+}
+
