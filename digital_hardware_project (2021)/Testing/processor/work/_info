@@ -1,0 +1,382 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/sinegen
+Ealu
+Z0 w1636450573
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/User/Downloads/processor
+Z5 8C:/Users/User/Downloads/processor/ALU.vhd
+Z6 FC:/Users/User/Downloads/processor/ALU.vhd
+l0
+L21
+VAI<:L?`o<_X5U>JILWXna2
+!s100 T>i<7PaLXnaHd]JoUR5=>0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1636468517
+!i10b 1
+Z9 !s108 1636468517.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/ALU.vhd|
+Z11 !s107 C:/Users/User/Downloads/processor/ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 AI<:L?`o<_X5U>JILWXna2
+l40
+L33
+V5OQQhDIl;CHVdN6Ab:mX[3
+!s100 DVa_Kbe8k8YN?DL;9?nc<3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eclockdiv
+Z14 w1636453404
+R1
+R2
+R3
+R4
+Z15 8C:/Users/User/Downloads/processor/ClockDiv.vhd
+Z16 FC:/Users/User/Downloads/processor/ClockDiv.vhd
+l0
+L5
+V<22D<=bJ<imZO9E7dW_[H1
+!s100 WTPjGDnV^F=:JcRAR3AUb0
+R7
+32
+Z17 !s110 1636453539
+!i10b 1
+Z18 !s108 1636453539.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/ClockDiv.vhd|
+Z20 !s107 C:/Users/User/Downloads/processor/ClockDiv.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 8 clockdiv 0 22 <22D<=bJ<imZO9E7dW_[H1
+l15
+L10
+VA_cQDB_Wf;U_2TLGbaVH71
+!s100 7K^N6@T_hk[ofgeH><XW_0
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Econtrol
+Z21 w1636465430
+R1
+R2
+R3
+R4
+Z22 8C:/Users/User/Downloads/processor/Control.vhd
+Z23 FC:/Users/User/Downloads/processor/Control.vhd
+l0
+L4
+VECTL0giG:h;Ajd>?CZW:T1
+!s100 dcUkAgWU9g]h@[NBaP]6W2
+R7
+32
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/Control.vhd|
+Z25 !s107 C:/Users/User/Downloads/processor/Control.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 7 control 0 22 ECTL0giG:h;Ajd>?CZW:T1
+l31
+L21
+VJZDDBd?YXIQPQ:O8O]NjU0
+!s100 _Mz2><3Pjd67B?LlVg`5N0
+R7
+32
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Edatapath
+Z26 w1636447782
+R1
+R2
+R3
+R4
+Z27 8C:/Users/User/Downloads/processor/Datapath.vhd
+Z28 FC:/Users/User/Downloads/processor/Datapath.vhd
+l0
+L13
+V9B>=S]eN[koh1Y]UCU;U01
+!s100 SJU87@gLBk1P_W9ZJhzKe0
+R7
+32
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/Datapath.vhd|
+Z30 !s107 C:/Users/User/Downloads/processor/Datapath.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 8 datapath 0 22 9B>=S]eN[koh1Y]UCU;U01
+l60
+L29
+V@o6Lb^zWV31[Y[IM7X0n?1
+!s100 II386IRB3I<jf19U3dEWe0
+R7
+32
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Emainmemory
+Z31 w1636454393
+R1
+R2
+R3
+R4
+Z32 8C:/Users/User/Downloads/processor/MainMemory.vhd
+Z33 FC:/Users/User/Downloads/processor/MainMemory.vhd
+l0
+L13
+VXZ4jFK[9=HBMbD_BcPQ1G3
+!s100 WHd;cD44XYOSQjXdied^O1
+R7
+32
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/MainMemory.vhd|
+Z35 !s107 C:/Users/User/Downloads/processor/MainMemory.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 10 mainmemory 0 22 XZ4jFK[9=HBMbD_BcPQ1G3
+l30
+L28
+V8Cf3>L[mCAmz7@WTPX8M51
+!s100 1=cMa<CoNiS7GGYlZlKb50
+R7
+32
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Emicrostore
+Z36 w1636462621
+R1
+R2
+R3
+R4
+Z37 8C:/Users/User/Downloads/processor/Microstore.vhd
+Z38 FC:/Users/User/Downloads/processor/Microstore.vhd
+l0
+L4
+V_H3hhWDoCZ]>WYhmTJ[_b2
+!s100 MNZd13bWa8V>i:O^K=I;O3
+R7
+32
+R8
+!i10b 1
+R9
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/Microstore.vhd|
+Z40 !s107 C:/Users/User/Downloads/processor/Microstore.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+w1636468514
+R1
+R2
+R3
+Z41 DEx4 work 10 microstore 0 22 _H3hhWDoCZ]>WYhmTJ[_b2
+8C:/Users/User/Downloads/processor/MicrostoreBhv.vhd
+FC:/Users/User/Downloads/processor/MicrostoreBhv.vhd
+l516
+L1
+V@dH`?l;788H7i<LRUZ9Mh2
+!s100 h7F8glmBB`G2>PEI2BG^W0
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/MicrostoreBhv.vhd|
+!s107 C:/Users/User/Downloads/processor/MicrostoreBhv.vhd|
+!i113 1
+R12
+R13
+Eprocessor
+Z42 w1636453640
+R1
+R2
+R3
+R4
+Z43 8C:/Users/User/Downloads/processor/Processor.vhd
+Z44 FC:/Users/User/Downloads/processor/Processor.vhd
+l0
+L5
+VW1Jbe;OCBoS40?MoTXKLW2
+!s100 0OHOMa5_hz9PL;ag<UETG2
+R7
+32
+R8
+!i10b 1
+R9
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/Processor.vhd|
+Z46 !s107 C:/Users/User/Downloads/processor/Processor.vhd|
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+Z47 DEx4 work 9 processor 0 22 W1Jbe;OCBoS40?MoTXKLW2
+l75
+L14
+V6RYUV<P685fmUc2]WAmR53
+!s100 >zCFgN1l=;5IdEP]P9mI_0
+R7
+32
+R8
+!i10b 1
+R9
+R45
+R46
+!i113 1
+R12
+R13
+Eregisterfile
+Z48 w1636465446
+R1
+R2
+R3
+R4
+Z49 8C:/Users/User/Downloads/processor/RegisterFile.vhd
+Z50 FC:/Users/User/Downloads/processor/RegisterFile.vhd
+l0
+L15
+Vi=H1m>fcKgbXd5_J^_1a60
+!s100 CUc9Rn3BaR?2ZMzh=g@z>1
+R7
+32
+Z51 !s110 1636468516
+!i10b 1
+Z52 !s108 1636468516.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/RegisterFile.vhd|
+Z54 !s107 C:/Users/User/Downloads/processor/RegisterFile.vhd|
+!i113 1
+R12
+R13
+Abhv
+R1
+R2
+R3
+DEx4 work 12 registerfile 0 22 i=H1m>fcKgbXd5_J^_1a60
+l34
+L30
+VY5n`mCBfEfBRAz@VMFRNf1
+!s100 @d6CUae:_e:CYb@?[E1Cl2
+R7
+32
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R12
+R13
+Etestbench
+Z55 w1636463405
+R2
+R3
+R4
+Z56 8C:/Users/User/Downloads/processor/Testbench.vhd
+Z57 FC:/Users/User/Downloads/processor/Testbench.vhd
+l0
+L5
+V^LkQbPIYOPO1:MbTC6Yo70
+!s100 7Ki:lNN[2HkM4Dje?VJG?2
+R7
+32
+R8
+!i10b 1
+R9
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/processor/Testbench.vhd|
+Z59 !s107 C:/Users/User/Downloads/processor/Testbench.vhd|
+!i113 1
+R12
+R13
+Atest
+R1
+R47
+R2
+R3
+DEx4 work 9 testbench 0 22 ^LkQbPIYOPO1:MbTC6Yo70
+l18
+L8
+V`UVA[G62a]Ynib;ZIW1>92
+!s100 TSi=8zHW4nUZl2ND0ZER81
+R7
+32
+R8
+!i10b 1
+R9
+R58
+R59
+!i113 1
+R12
+R13
